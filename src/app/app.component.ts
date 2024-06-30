@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-17-ngClass';
+
+  updateStyles = 'updateStyles';
+  colorMode = 'lightMode';
+
+  toggleMode() {
+    if(this.colorMode === 'lightMode') {
+      this.colorMode = 'darkMode';
+    } else {
+      this.colorMode = 'lightMode';
+    }
+  }
 }
